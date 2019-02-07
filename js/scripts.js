@@ -31,4 +31,16 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
+
+
+  $("button#cat").click(function() {
+    $("ul#kitty").append("<li>Mer</li>");
+    $("ul#pup").append("<li>WUFF</li>");
+  });
+
+  $("button#doge").click(function() {
+    $("ul#pup").append("<li>bark bark</li>");
+    $("ul#kitty").append("<li>HISSSSSSSSSSS</li>");
+  });
 });
