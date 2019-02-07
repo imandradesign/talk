@@ -35,12 +35,24 @@ $(document).ready(function() {
 
 
   $("button#cat").click(function() {
-    $("ul#kitty").append("<li>Mer</li>");
-    $("ul#pup").append("<li>WUFF</li>");
+    $("ul#kitty").append("<li>Mer</li>").append("<img src='img/cat.png' alt='cat'>");
+    $("ul#pup").append("<li>WUFF</li>").append("<img src='img/doge.png' alt='doge'>");
+    $("ul#kitty").children("img").click(function() {
+      $(this).remove();
+    });
+    $("ul#pup").children("img").click(function() {
+      $(this).remove();
+    });
   });
 
   $("button#doge").click(function() {
-    $("ul#pup").append("<li>bark bark</li>");
-    $("ul#kitty").append("<li>HISSSSSSSSSSS</li>");
+    $("ul#pup").append("<li>bark bark</li>").append("<img src='img/doge-2.jpg' alt='another doge'>");
+    $("ul#kitty").append("<li>HISSSSSSSSSSS</li>").append("<img src='img/anger-cat.jpeg' alt='anger cat'>");
+    $("ul#kitty").children("img").click(function() {
+      $(this).remove();
+    });
+    $("ul#pup").children("img").click(function() {
+      $(this).remove();
+    });
   });
 });
